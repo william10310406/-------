@@ -1,0 +1,9 @@
+# LaTeX 臨時檔案
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
+missfont.log 
