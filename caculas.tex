@@ -1,0 +1,65 @@
+% !TeX program = xelatex
+\documentclass{beamer}
+
+% 主题设置
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% 中文字体设置
+\usepackage{xeCJK}
+\setCJKmainfont{PingFang TC}  % 使用蘋方-繁
+\setCJKsansfont{PingFang TC}  % 使用蘋方-繁
+\setCJKmonofont{PingFang TC}  % 使用蘋方-繁
+
+% 其他常用包
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% 标题信息
+\title{標題}
+\author{作者：簡偉恆、許順傑、盧詠涵}
+\institute{輔仁大學}
+\date{\today}
+
+\begin{document}
+
+% 标题页
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% 目录页
+\begin{frame}{目錄}
+    \tableofcontents
+\end{frame}
+
+% 第一个章节
+\section{第一章}
+\begin{frame}{第一頁標題}
+    \begin{itemize}
+        \item 第一點
+        \item 第二點
+        \item 第三點
+    \end{itemize}
+\end{frame}
+
+% 第二个章节
+\section{第二章}
+\begin{frame}{第二頁標題}
+    \begin{block}{重要內容}
+        重要內容
+    \end{block}
+    
+    \begin{alertblock}{注意}
+        注意的內容
+    \end{alertblock}
+\end{frame}
+
+% 结束页
+\begin{frame}{謝謝}
+    \centering
+    感謝聆聽
+\end{frame}
+
+\end{document}
