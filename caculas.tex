@@ -55,9 +55,6 @@
     \begin{itemize}
         \item AND Gate: Output is 1 only when both inputs are 1
         \item OR Gate: Output is 1 when any input is 1
-        \item NOT Gate: Output is opposite of input
-        \item NAND Gate: AND Gate output inverted
-        \item NOR Gate: OR Gate output inverted
     \end{itemize}
 \end{frame}
 
@@ -103,8 +100,38 @@
     \end{block}
 \end{frame}
 
-\begin{frame}{Logic Gate Truth Tables}
-    \begin{block}{OR Gate}
+
+% OR gate 圖片與介紹頁
+\begin{frame}{OR Gate in Minecraft}
+    \begin{itemize}
+        \item The OR gate outputs 1 when any input is 1.
+        \item In Minecraft, you can use redstone to build an OR gate.
+        \item Below are examples of different input combinations and their outputs:
+    \end{itemize}
+    \begin{figure}[ht]
+        \centering
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/orgate_00.PNG}\\
+            \small Input: 0, 0
+        \end{minipage}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/orgate_01.png}\\
+            \small Input: 0, 1
+        \end{minipage}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/orgate_11.png}\\
+            \small Input: 1, 1
+        \end{minipage}
+        \caption{OR Gate in Minecraft: Different Input Combinations}
+    \end{figure}
+\end{frame}
+
+% OR gate truth table 獨立頁
+\begin{frame}{Truth Table of OR Gate}
+    \begin{block}{Truth Table}
         \begin{tabular}{|c|c|c|}
             \hline
             Input A & Input B & Output \\
@@ -116,53 +143,6 @@
             \hline
         \end{tabular}
     \end{block}
-\end{frame}
-
-\begin{frame}{Logic Gate Truth Tables}
-    \begin{block}{NOT Gate}
-        \begin{tabular}{|c|c|}
-            \hline
-            Input & Output \\
-            \hline
-            0 & 1 \\
-            1 & 0 \\
-            \hline
-        \end{tabular}
-    \end{block}
-\end{frame}
-
-% Second chapter
-\section{Minecraft Implementation}
-\begin{frame}{Redstone System in Minecraft}
-    \begin{itemize}
-        \item Redstone Dust: Transmits signals
-        \item Redstone Torch: Generates signals
-        \item Redstone Repeater: Delays and amplifies signals
-        \item Redstone Comparator: Compares signal strengths
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Logic Gate Implementation in Minecraft}
-    \begin{block}{Basic Logic Gates}
-        \begin{itemize}
-            \item NOT Gate: Using redstone torch
-            \item AND Gate: Using two redstone torches in series
-            \item OR Gate: Using two redstone torches in parallel
-        \end{itemize}
-    \end{block}
-    
-    \begin{alertblock}{Note}
-        In Minecraft, the on/off state of redstone torches is opposite to the logic gate input/output
-    \end{alertblock}
-\end{frame}
-
-\begin{frame}{Practical Applications in Minecraft}
-    \begin{itemize}
-        \item Automatic Door Systems
-        \item Trap Mechanisms
-        \item Automatic Farms
-        \item Item Sorting Systems
-    \end{itemize}
 \end{frame}
 
 % End page
