@@ -1,65 +1,141 @@
 % !TeX program = xelatex
 \documentclass{beamer}
 
-% 主题设置
+% Theme settings
 \usetheme{Madrid}
 \usecolortheme{default}
 
-% 中文字体设置
+% Font settings
 \usepackage{xeCJK}
-\setCJKmainfont{PingFang TC}  % 使用蘋方-繁
-\setCJKsansfont{PingFang TC}  % 使用蘋方-繁
-\setCJKmonofont{PingFang TC}  % 使用蘋方-繁
+\setCJKmainfont{PingFang TC}  % For any Chinese characters
+\setCJKsansfont{PingFang TC}
+\setCJKmonofont{PingFang TC}
 
-% 其他常用包
+% Other packages
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-% 标题信息
-\title{標題}
-\author{作者：簡偉恆、許順傑、盧詠涵}
-\institute{輔仁大學}
+% Title information
+\title{Digital Logic and Minecraft Implementation}
+\author{Author: Jian Wei Heng, Xu Shun Jie, Lu Yong Han}
+\institute{Fu Jen Catholic University}
 \date{\today}
 
 \begin{document}
 
-% 标题页
+% Title page
 \begin{frame}
     \titlepage
 \end{frame}
 
-% 目录页
-\begin{frame}{目錄}
+% Table of contents
+\begin{frame}{Table of Contents}
     \tableofcontents
 \end{frame}
 
-% 第一个章节
-\section{第一章}
-\begin{frame}{第一頁標題}
+% First chapter
+\section{Digital Logic Basics}
+\begin{frame}{Basic Concepts of Digital Logic}
     \begin{itemize}
-        \item 第一點
-        \item 第二點
-        \item 第三點
+        \item Digital logic uses binary system (0 and 1)
+        \item 0 represents low voltage (Low)
+        \item 1 represents high voltage (High)
+        \item These states can be implemented through circuits
     \end{itemize}
 \end{frame}
 
-% 第二个章节
-\section{第二章}
-\begin{frame}{第二頁標題}
-    \begin{block}{重要內容}
-        重要內容
+\begin{frame}{Basic Logic Gates}
+    \begin{itemize}
+        \item AND Gate: Output is 1 only when both inputs are 1
+        \item OR Gate: Output is 1 when any input is 1
+        \item NOT Gate: Output is opposite of input
+        \item NAND Gate: AND Gate output inverted
+        \item NOR Gate: OR Gate output inverted
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Logic Gate Truth Tables}
+    \begin{block}{AND Gate}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Input A & Input B & Output \\
+            \hline
+            0 & 0 & 0 \\
+            0 & 1 & 0 \\
+            1 & 0 & 0 \\
+            1 & 1 & 1 \\
+            \hline
+        \end{tabular}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Logic Gate Truth Tables}
+    \begin{block}{OR Gate}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Input A & Input B & Output \\
+            \hline
+            0 & 0 & 0 \\
+            0 & 1 & 1 \\
+            1 & 0 & 1 \\
+            1 & 1 & 1 \\
+            \hline
+        \end{tabular}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Logic Gate Truth Tables}
+    \begin{block}{NOT Gate}
+        \begin{tabular}{|c|c|}
+            \hline
+            Input & Output \\
+            \hline
+            0 & 1 \\
+            1 & 0 \\
+            \hline
+        \end{tabular}
+    \end{block}
+\end{frame}
+
+% Second chapter
+\section{Minecraft Implementation}
+\begin{frame}{Redstone System in Minecraft}
+    \begin{itemize}
+        \item Redstone Dust: Transmits signals
+        \item Redstone Torch: Generates signals
+        \item Redstone Repeater: Delays and amplifies signals
+        \item Redstone Comparator: Compares signal strengths
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Logic Gate Implementation in Minecraft}
+    \begin{block}{Basic Logic Gates}
+        \begin{itemize}
+            \item NOT Gate: Using redstone torch
+            \item AND Gate: Using two redstone torches in series
+            \item OR Gate: Using two redstone torches in parallel
+        \end{itemize}
     \end{block}
     
-    \begin{alertblock}{注意}
-        注意的內容
+    \begin{alertblock}{Note}
+        In Minecraft, the on/off state of redstone torches is opposite to the logic gate input/output
     \end{alertblock}
 \end{frame}
 
-% 结束页
-\begin{frame}{謝謝}
+\begin{frame}{Practical Applications in Minecraft}
+    \begin{itemize}
+        \item Automatic Door Systems
+        \item Trap Mechanisms
+        \item Automatic Farms
+        \item Item Sorting Systems
+    \end{itemize}
+\end{frame}
+
+% End page
+\begin{frame}{Thank You}
     \centering
-    感謝聆聽
+    Thank you for listening!
 \end{frame}
 
 \end{document}
